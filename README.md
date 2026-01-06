@@ -1,16 +1,4 @@
-# README template
-
-> If you need more information about how to fill in this template, read the accompanying [guide](./guide_readme.md).
->
-> This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text.
-
-## {Project} logo and badges
-
-{This section is optional. Embed an image of the project logo and include links to relevant badges in the README.}
-
-## {Project Name}
-
-{Include the project URL and project owner name underneath the project name if applicable.}
+# Error Handling Tools
 
 ## Table of contents
 
@@ -25,46 +13,51 @@
 
 ### What kind of software is this?
 
-[...]
+This repository is a collection of different scripts that track, parse, and log errors.
 
 __________________
 
 ### Who can use this app?
 
-[...]
+Anyone running through common errors from the terminal/command-line
 
 __________________
 
 ### How is the project is organized?
 
-#### Naming conventions
+The project is organized with a 'module' specific to each type of error handling.
 
-###### What is the official 'source of truth' for 'standardization'?
+It's not limited to any specific programming language.
 
-###### E.g., PEP defines the naming convention guidelines for Python.
+Information about pre-requisites or specific language requirements are defined for each 'module' in the README sections below.
 
-[...]
+### Project 'modules'
 
-#### Project structure
+#### trap_error_logs
 
-[...]
-
-#### File types
-
-###### Not all files types are necessary according to the 'latest' recommendations.
-###### Understand the context of the software app as an end-product.
-###### What's the difference between project recommendations versus requirements?
-
-[...]
-
-## Project setup
-
-### Pre-requisites
+###### Pre-requisites
 
 Before using {Project name}, install necessary pkgs:
 
-* [PKG_NAME](https://www.python.org/downloads/)
-* [...]
+* [jq](https://jqlang.org/download/)
+
+###### Language requirements/dependencies
+
+* Bash scripting language
+
+###### Running the script
+
+Configure the env vars file: `"$(dirname "$0")/config.env`
+
+Write the following line into the start of any bash script that requires error logging:
+`source "$(dirname "$0")/main.sh"`
+
+This outputs the error logs as an array of JSON objects.
+```
+[
+
+]
+```
 
 ### Requirements
 
@@ -72,77 +65,7 @@ GitHub will automatically not push any tokens.
 
 However, to commit any changes the .gitignore file must include any files that contain credentials.
 
-If the Markdown Changelog Generator is used, it needs to include  'changelog_generator.toml' because it lists your GitHub repo's PAT (Personal Access Token). 
-
-#### Install {Project Name}
-
-1. {Write the step here.}
-
-   {Explanatory text here}
-
-   {Optional: Include a code sample or screenshot that helps your users complete this step}
-
-2. {Write the step here.}
-
-   a. {Substep 1}
-
-   b. {Substep 2}
-
-#### Configure {Project Name}
-
-1. {Write the step here.}
-2. {Write the step here.}
-
-#### Run {Project Name}
-
-1. {Write the step here.}
-2. {Write the step here.}
-
-#### Troubleshoot {Project Name}
-
-1. {Write the step here.}
-2. {Write the step here.}
-
-<table>
-  <tr>
-   <td>
-    Issue
-   </td>
-   <td>
-    Solution
-   </td>
-  </tr>
-  <tr>
-   <td>
-    {Describe the issue here}
-   </td>
-   <td>
-    {Write solution here}
-   </td>
-  </tr>
-  <tr>
-   <td>
-    {Describe the issue here}
-   </td>
-   <td>
-    {Write solution here}
-   </td>
-  </tr>
-  <tr>
-   <td>
-    {Describe the issue here}
-   </td>
-   <td>
-    {Write solution here}
-   </td>
-  </tr>
-</table>
-
-Other troubleshooting support:
-
-* {Link to FAQs}
-* {Link to runbooks}
-* {Link to other relevant support information}
+If the Markdown Changelog Generator is used, it needs to include  'changelog_generator.toml' because it lists your GitHub repo's PAT (Personal Access Token).
 
 ### Recommendations
 
@@ -206,4 +129,4 @@ Maintaining a CHANGELOG file is always recommended for a quick overview of how t
 
 ## Terms of use
 
-{Project Name} is licensed under {link to license file}.
+Error Handling Tools is licensed under [MIT](https://commons.wikimedia.org/wiki/Template:X11)
