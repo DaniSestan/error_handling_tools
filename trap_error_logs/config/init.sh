@@ -1,1 +1,1 @@
-error_log_filepath=
+# does anything need to be done to init this script

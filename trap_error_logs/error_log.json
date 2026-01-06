@@ -1,92 +1,9 @@
 [
   {
-    "timestamp_utc": "2026-01-06 11:33:12",
-    "timestamp_local": "2026-01-06 11:33:12 CET",
+    "timestamp_utc": "2026-01-06 21:54:05",
+    "timestamp_local": "2026-01-06 21:54:05 CET",
     "user": "root",
-    "error": "ls /test/folder/test/folder",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 11:33:44",
-    "timestamp_local": "2026-01-06 11:33:44 CET",
-    "user": "root",
-    "error": "ls /test/folder/test/",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 11:35:00",
-    "timestamp_local": "2026-01-06 11:35:00 CET",
-    "user": "root",
-    "error": "ls /test/folder/",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 11:40:32",
-    "timestamp_local": "2026-01-06 11:40:32 CET",
-    "user": "root",
-    "error": "ls /test/folder/test",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 11:42:46",
-    "timestamp_local": "2026-01-06 11:42:46 CET",
-    "user": "root",
-    "error": "ls /test/folder/test/test",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 13:44:41",
-    "timestamp_local": "2026-01-06 13:44:41 CET",
-    "user": "root",
-    "command": "ls /test/folder/test/test/testingetc",
-    "error": "EPH",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 13:53:06",
-    "timestamp_local": "2026-01-06 13:53:06 CET",
-    "user": "root",
-    "command": "ls /test/folder/test/",
-    "error": "EPH",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 13:53:06",
-    "timestamp_local": "2026-01-06 13:53:06 CET",
-    "user": "root",
-    "command": "ls /test/folder/test/test/testingetc/etc",
-    "error": "EPH",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 13:54:15",
-    "timestamp_local": "2026-01-06 13:54:15 CET",
-    "user": "root",
-    "command": "ls /test/folder/test/test/testingetc/etc",
-    "error": "EPH",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 13:56:16",
-    "timestamp_local": "2026-01-06 13:56:16 CET",
-    "user": "root",
-    "command": "ls /test/folder/test/test/testingetc/etc",
-    "error": "EPH",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 13:58:08",
-    "timestamp_local": "2026-01-06 13:58:08 CET",
-    "user": "root",
-    "command": "ls /test/folder/test/test/testingetc/etc",
-    "error": "EPH",
-    "exit_code": "0"
-  },
-  {
-    "timestamp_utc": "2026-01-06 13:59:23",
-    "timestamp_local": "2026-01-06 13:59:23 CET",
-    "user": "root",
-    "command": "ls /test/folder/test/test/testingetc/etc",
+    "command": "ls /test/folder/test/test/testingetc/etc/yadayadayada",
     "error": "EPH",
     "exit_code": "0"
   }

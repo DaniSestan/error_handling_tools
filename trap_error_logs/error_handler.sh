@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# sudo bash /home/dani/Work/Work-Projects/error_handling_tools/error_handling/trap_error_logs/main.sh
+# sudo bash /home/dani/Work/Work-Projects/error_handling_tools/trap_error_logs/main.sh
 
 # TODO: error should be assigned to key-val
 
