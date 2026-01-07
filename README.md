@@ -81,11 +81,23 @@ Before using {Project name}, install necessary pkgs:
 
 ###### Running the script
 
-After cloning the repository, move the trap_error_logs folder under the destination project's root dir.
+`cd` into the cloned repository, and create a copy of the trap_error_logs folder under your destination project's root dir.
+```
+cd error_handling_tools/trap_error_logs
+trap_error_logs_filepath=$(pwd)
+cp $trap_error_logs_filepath <DEST_PROJECT_ROOT>
+```
 
-The project must contain an .env file. Create one if it does not exist.
-
-etc tab
+Append the following vars to the .env file:
+```
+cd <DEST_PROJECT_ROOT>/trap_error_logs
+local_trap_error_logs_filepath=$(pwd)
+{
+  echo "TRAP_ERROR_LOGS_MAIN_EXEC=$local_trap_error_logs_filepath/main.sh"
+  echo "TRAP_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/error_logs.json"
+  echo "BASH_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/bash_errors.log"
+} >> .env
+```
 
 # TODO: print the commands to init error logging within any project
 

@@ -1,8 +1,8 @@
 [
   {
     "log_index": "1",
-    "timestamp_utc": "2026-01-07 14:02:16.413",
-    "timestamp_local": "2026-01-07 14:02:16.415 CET",
+    "timestamp_utc": "2026-01-07 15:27:15.684",
+    "timestamp_local": "2026-01-07 15:27:15.686 CET",
     "user": "root",
     "command": "ls /foo",
     "error": "ls: cannot access '/foo': No such file or directory",
@@ -10,8 +10,8 @@
   },
   {
     "log_index": "2",
-    "timestamp_utc": "2026-01-07 14:02:16.430",
-    "timestamp_local": "2026-01-07 14:02:16.432 CET",
+    "timestamp_utc": "2026-01-07 15:27:15.704",
+    "timestamp_local": "2026-01-07 15:27:15.706 CET",
     "user": "root",
     "command": "ls /foo/bar",
     "error": "ls: cannot access '/foo/bar': No such file or directory",
@@ -19,8 +19,8 @@
   },
   {
     "log_index": "3",
-    "timestamp_utc": "2026-01-07 14:02:16.448",
-    "timestamp_local": "2026-01-07 14:02:16.450 CET",
+    "timestamp_utc": "2026-01-07 15:27:15.725",
+    "timestamp_local": "2026-01-07 15:27:15.727 CET",
     "user": "root",
     "command": "ls /foo/bar/baz",
     "error": "ls: cannot access '/foo/bar/baz': No such file or directory",
