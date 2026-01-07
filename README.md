@@ -35,6 +35,40 @@ Information about pre-requisites or specific language requirements are defined f
 
 #### trap_error_logs
 
+This module parses the data from any errors output from a bash program, and logs the data in a JSON file.
+
+```
+[
+  {
+    "log_index": "1",
+    "timestamp_utc": "2026-01-07 14:02:16.413",
+    "timestamp_local": "2026-01-07 14:02:16.415 CET",
+    "user": "root",
+    "command": "ls /foo",
+    "error": "ls: cannot access '/foo': No such file or directory",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "2",
+    "timestamp_utc": "2026-01-07 14:02:16.430",
+    "timestamp_local": "2026-01-07 14:02:16.432 CET",
+    "user": "root",
+    "command": "ls /foo/bar",
+    "error": "ls: cannot access '/foo/bar': No such file or directory",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "3",
+    "timestamp_utc": "2026-01-07 14:02:16.448",
+    "timestamp_local": "2026-01-07 14:02:16.450 CET",
+    "user": "root",
+    "command": "ls /foo/bar/baz",
+    "error": "ls: cannot access '/foo/bar/baz': No such file or directory",
+    "exit_code": "0"
+  }
+]
+```
+
 ###### Pre-requisites
 
 Before using {Project name}, install necessary pkgs:
@@ -47,17 +81,13 @@ Before using {Project name}, install necessary pkgs:
 
 ###### Running the script
 
-Configure the env vars file: `"$(dirname "$0")/config.env`
+After cloning the repository, move the trap_error_logs folder under the destination project's root dir.
 
-Write the following line into the start of any bash script that requires error logging:
-`source "$(dirname "$0")/main.sh"`
+The project must contain an .env file. Create one if it does not exist.
 
-This outputs the error logs as an array of JSON objects.
-```
-[
+etc tab
 
-]
-```
+# TODO: print the commands to init error logging within any project
 
 ### Requirements
 

@@ -6,8 +6,8 @@ log_index=$(jq "length + 1" $TRAP_ERROR_LOGS_FILEPATH)
 bash_error=$(tail -n 1 $BASH_ERROR_LOGS_FILEPATH)
 error_log=$(echo "{
   \"log_index\": \"$log_index\",
-  \"timestamp_utc\": \"$(date '+%Y-%m-%d %H:%M:%S')\",
-  \"timestamp_local\": \"$(date '+%Y-%m-%d %H:%M:%S %Z')\",
+  \"timestamp_utc\": \"$(date '+%Y-%m-%d %H:%M:%S.%3N')\",
+  \"timestamp_local\": \"$(date '+%Y-%m-%d %H:%M:%S.%3N %Z')\",
   \"user\": \"$(whoami)\",
   \"command\": \"$BASH_COMMAND\",
   \"error\": \"$bash_error\",
