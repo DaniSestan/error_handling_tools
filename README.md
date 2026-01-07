@@ -85,7 +85,7 @@ Before using {Project name}, install necessary pkgs:
 ```
 cd error_handling_tools/trap_error_logs
 trap_error_logs_filepath=$(pwd)
-cp $trap_error_logs_filepath <DEST_PROJECT_ROOT>
+cp -r $trap_error_logs_filepath <DEST_PROJECT_ROOT>
 ```
 
 Append the following vars to the .env file:
