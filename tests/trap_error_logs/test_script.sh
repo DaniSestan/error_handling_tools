@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source .env
-source $TRAP_ERROR_LOGS_FILEPATH
+exec 2> >(tee -a $BASH_ERROR_LOGS >&2)
+trap "source \"$TRAP_ERROR_LOGS_MAIN_EXEC\" \"$BASH_COMMAND\" \"$?\"" ERR
 
-ls /test/folder/test/test/testingetc/etc/yadayadayada/yada/etc/etcetcetc/etc/etcetcetc/qwertyuiop
+ls /foo/bar/baz/
