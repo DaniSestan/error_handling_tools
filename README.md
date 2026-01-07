@@ -89,16 +89,15 @@ cp -r $trap_error_logs_filepath <DEST_PROJECT_ROOT>
 cd <DEST_PROJECT_ROOT>/trap_error_logs
 ```
 
-Append the following vars to the .env file:
-
-TODO: instead of appending to the .env file, change the env vars in the template .env file
+Change the env vars in the template .env file:
 ```
 local_trap_error_logs_filepath=$(pwd)
-{
-  echo "TRAP_ERROR_LOGS_MAIN_EXEC=$local_trap_error_logs_filepath/main.sh"
-  echo "TRAP_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/error_logs.json"
-  echo "BASH_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/bash_errors.log"
-} >> .env
+
+sed -i "s|^TRAP_ERROR_LOGS_MAIN_EXEC=.*|TRAP_ERROR_LOGS_MAIN_EXEC=$local_trap_error_logs_filepath/main.sh|" .env
+
+sed -i "s|^TRAP_ERROR_LOGS_FILEPATH=.*|TRAP_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/error_logs.json|" .env
+
+sed -i "s|^BASH_ERROR_LOGS_FILEPATH=.*|BASH_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/bash_errors.log|" .env
 ```
 
 # TODO: print the commands to init error logging within any project
