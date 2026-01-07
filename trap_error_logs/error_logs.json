@@ -1,11 +1,20 @@
 [
   {
     "log_index": "1",
-    "timestamp_utc": "2026-01-07 12:51:57",
-    "timestamp_local": "2026-01-07 12:51:57 CET",
+    "timestamp_utc": "2026-01-07 13:45:19",
+    "timestamp_local": "2026-01-07 13:45:19 CET",
     "user": "root",
     "command": "ls /foo/bar/baz/",
     "error": "ls: cannot access '/foo/bar/baz/': No such file or directory",
+    "exit_code": "0"
+  },
+  {
+    "log_index": "2",
+    "timestamp_utc": "2026-01-07 13:46:01",
+    "timestamp_local": "2026-01-07 13:46:01 CET",
+    "user": "root",
+    "command": "ls /foo/bar/baz/etc",
+    "error": "ls: cannot access '/foo/bar/baz/etc': No such file or directory",
     "exit_code": "0"
   }
 ]
