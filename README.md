@@ -86,11 +86,13 @@ Before using {Project name}, install necessary pkgs:
 cd error_handling_tools/trap_error_logs
 trap_error_logs_filepath=$(pwd)
 cp -r $trap_error_logs_filepath <DEST_PROJECT_ROOT>
+cd <DEST_PROJECT_ROOT>/trap_error_logs
 ```
 
 Append the following vars to the .env file:
+
+TODO: instead of appending to the .env file, change the env vars in the template .env file
 ```
-cd <DEST_PROJECT_ROOT>/trap_error_logs
 local_trap_error_logs_filepath=$(pwd)
 {
   echo "TRAP_ERROR_LOGS_MAIN_EXEC=$local_trap_error_logs_filepath/main.sh"
