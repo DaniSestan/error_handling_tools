@@ -79,28 +79,15 @@ Before using {Project name}, install necessary pkgs:
 
 * Bash scripting language
 
-###### Running the script
+###### Running the module in your project
 
-`cd` into the cloned repository, and create a copy of the trap_error_logs folder under your destination project's root dir.
+Init `trap_error_logs` in any local bash program/repository after cloning `error_handling_tools` repository:
+
 ```
-cd error_handling_tools/trap_error_logs
-trap_error_logs_filepath=$(pwd)
-cp -r $trap_error_logs_filepath <DEST_PROJECT_ROOT>
-cd <DEST_PROJECT_ROOT>/trap_error_logs
-```
-
-Change the env vars in the template .env file:
-```
-local_trap_error_logs_filepath=$(pwd)
-
-sed -i "s|^TRAP_ERROR_LOGS_MAIN_EXEC=.*|TRAP_ERROR_LOGS_MAIN_EXEC=$local_trap_error_logs_filepath/main.sh|" .env
-
-sed -i "s|^TRAP_ERROR_LOGS_FILEPATH=.*|TRAP_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/error_logs.json|" .env
-
-sed -i "s|^BASH_ERROR_LOGS_FILEPATH=.*|BASH_ERROR_LOGS_FILEPATH=$local_trap_error_logs_filepath/bash_errors.log|" .env
+# `cd` into the `error_handling_tools` project root
+bash ./trap_error_logs/init.sh
 ```
 
-# TODO: print the commands to init error logging within any project
 
 ### Requirements
 
