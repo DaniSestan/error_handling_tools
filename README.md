@@ -95,7 +95,7 @@ GitHub will automatically not push any tokens.
 
 However, to commit any changes the .gitignore file must include any files that contain credentials.
 
-If the Markdown Changelog Generator is used, it needs to include  'changelog_generator.toml' because it lists your GitHub repo's PAT (Personal Access Token).
+If the Markdown Changelog Generator is used, it needs to include  '.changelog_generator.toml' because it lists your GitHub repo's PAT (Personal Access Token) - limit the token permissions to 'public_repo' and set expiration between 30-90 days.
 
 ### Recommendations
 
