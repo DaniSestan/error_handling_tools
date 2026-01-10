@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# sudo bash /home/dani/Work/Work-Projects/error_handling_tools/trap_error_logs/print_logs.sh
-
-# TODO: some error printing logs tab
 log_index=$(jq "length + 1" $TRAP_ERROR_LOGS_FILEPATH)
 bash_error=$(tail -n 1 $BASH_ERROR_LOGS_FILEPATH)
 error_log=$(echo "{

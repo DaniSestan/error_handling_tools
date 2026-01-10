@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# bash /home/dani/Work/Work-Projects/error_handling_tools/bash_debugger/main.sh
-
 # `trap` command here is used to print the filename, line number and the line to exec on user prompt
 # source: https://www.hotconfig.com/bash-debugging/
 

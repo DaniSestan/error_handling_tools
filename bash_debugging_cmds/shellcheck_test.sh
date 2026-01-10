@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Sample code that can be debugged with shellcheck:
-# `shellcheck /home/dani/Work/Work-Projects/error_handling_tools/shellcheck_testing/test.sh`
+# ShellCheck is a static analysis tool that can be used for bash code linting
 
+# `shellcheck /home/dani/Work/Work-Projects/error_handling_tools/shellcheck_testing/shellcheck_test.sh`
+
+# Sample code:
 sayHello="Hello,"
 
 function welcome_msg {

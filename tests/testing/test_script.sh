@@ -1,0 +1,10 @@
+#!/bin/bash
+
+FILEPATH_OF_TEST_DEST_PROJ=$1
+echo "FILEPATH_OF_TEST_DEST_PROJ: $FILEPATH_OF_TEST_DEST_PROJ"
+#source $FILEPATH_OF_TEST_DEST_PROJ/.env
+#source $TRAP_ERROR_LOGS_MAIN_EXEC
+
+ls /foo
+ls /foo/bar
+ls /foo/bar/baz

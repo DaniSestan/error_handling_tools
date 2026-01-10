@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-echo -n "Absolute path of 'error_handling_tools' local repository: "
-read -r error_handling_tools_filepath
+error_handling_tools_filepath=$(dirname "$0")/../
 echo -n "Absolute path of the project directory where you are initializing trap_error_logs: "
 read -r proj_dest_filepath
 
